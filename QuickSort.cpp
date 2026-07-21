@@ -89,3 +89,23 @@ void quicksort(int low, int high) //membuat prosedur quicksort dengan parameter 
     quicksort(low, j - 1); //pemanggilan rekursive prosedur q_sort untuk mengurutkan sub array sebelah kiri
     quicksort(j + 1, high); //pemanggilan rekursive prosedur q_sort untuk mengurutkan sub array sebelah kanan
 }
+
+
+void output() //pembuatan prosedur output
+{
+    cout << "\n------------------------" << endl; //display untuk
+                                                 //menampilkan keterangan elemnt array yang telah di urutkan
+    cout << "\nInputkan Isi element array" << endl;
+    cout << "\n------------------------" << endl;
+
+    for (int i = 0; i < n; i++) //loopin untuk menampilkan elemnt array
+                                 //yang telah di urutkan
+    {
+        cout << arr[i] << " ";
+    }
+
+    cout << "\n\njumlah perbandingan : " << cmp_count << endl; //untuk
+                                                               //menampilkan jumlah perbandingan didalam algoritma
+    cout << "Jumlah Pergerakan Data : " << mov_count << endl; //untuk
+                                                              //menampilkan jumlah pergerakan data
+}
