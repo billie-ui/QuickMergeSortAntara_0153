@@ -22,3 +22,23 @@ void input() //membuat prosedur input
             cout << "\nMaksimal panjang array adalah 20";
         }
     }
+
+    cout << "\n------------------------" << endl; //display untuk menampilkan permintaan mengisi masing masing index array
+    cout << "\nInputkan Isi element array" << endl;
+    cout << "\n------------------------" << endl;
+
+    for (int i = 0; i < n; i++) //looping untuk mengisi index array sampai index ke n-1
+    {
+        cout << "Array index ke- " << i << " : ";
+        cin >> arr[i];
+    }
+}
+
+
+void swap(int x, int y) //membuat prosedur swap dengan parameter x,y bertipe data integer
+{
+    int temp = arr[x]; //mengisi variabel temporary dengan arr index ke x
+    arr[x] = arr[y]; //mengisi arr index ke x dengan arr index ke y
+    arr[y] = temp; //mengisi arr index ke y dengan variabel temporary
+    mov_count++; //increment variabel mov_count
+}
