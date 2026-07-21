@@ -109,3 +109,32 @@ void output() //pembuatan prosedur output
     cout << "Jumlah Pergerakan Data : " << mov_count << endl; //untuk
                                                               //menampilkan jumlah pergerakan data
 }
+
+
+int main()
+{
+    char ch;
+
+    do
+    {
+        input(); //pemanggilan prosedur input
+        quicksort(0, n - 1); //pemanggilan prosedur input
+        output(); //pemanggilan prosedur input
+
+        cout << "\n\nIngin Melanjutkan? (y/t) : "; //pilihan untuk
+                                                   //melanjutkan looping atau tidak
+        cin >> ch;
+
+        if (ch == 't' || ch == 'T') //jika masukkan pengguna n atau N
+                                    //maka program berhenti
+        {
+            break;
+        }
+
+        system("pause");
+        system("cls");
+
+    } while (true);
+
+    return 0;
+}
